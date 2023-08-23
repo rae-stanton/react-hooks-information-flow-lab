@@ -4,8 +4,10 @@ import itemData from "../data/items";
 import Header from "../components/Header";
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
   function onDarkModeClick() {
-    setIsDarkMode((isDarkMode) => !isDarkMode);
+    setIsDarkMode((prevMode) => !prevMode);
   }
 
   return (

@@ -15,9 +15,7 @@ import React, { useState } from "react";
 // You will need to pass a callback function as a prop called onDarkModeClick to the Header component in order for the test to pass.
 
 function Header({ onDarkModeClick, isDarkMode }) {
-  const [isDarkMode, setIsDarkMode] = useState(false);
   return (
-    //header from app goes here
     <header>
       <h2>Shopster</h2>
       <button onClick={onDarkModeClick}>
@@ -26,4 +24,6 @@ function Header({ onDarkModeClick, isDarkMode }) {
     </header>
   );
 }
+
 export default Header;
+
